@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+   <meta charset="UTF-8">
+   <meta name="_csrf" data-th-content="${_csrf.token}" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="_csrf_header" data-th-content="${_csrf.headerName}" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link th:href="@{/font/fontawesome/css/all.css}" rel="stylesheet" />
+   <link th:href="@{/css/owl.carousel.min.css}" rel="stylesheet" />
+   <link th:href="@{/css/owl.theme.default.min.css}" rel="stylesheet" />
+   <link th:href="@{/bootstrap/css/bootstrap.min.css}" rel="stylesheet" />
+   <link th:href="@{/css/base.css}" rel="stylesheet" />
+   <link th:href="@{/css/index.css}" rel="stylesheet" />
+   <link th:href="@{/css/responsive.css}" rel="stylesheet" />
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+   <title>Giới thiệu</title>
+</head>
+<body class="common-home">
+
+  <header th:replace="fragment::header"></header>
+  
+  <section class="bread_crumb py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <ul class="breadcrumb">
+                        <li>
+                            <a th:href="@{/freshfood/trang-chu}">
+                               <span><i class="fa fa-home"></i> Trang chủ </span>
+                               <span><i class="fa fa-angle-right"></i></span>
+                            </a> 
+                        </li>
+                        <li>
+                            <a th:href="@{/freshfood/gioi-thieu}">
+                               <span>GIới thiệu</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="page">
+        <div class="policy d-flex justify-content-around" id="header-service-0" style="background-image: none;">
+            <div class="item-policy d-flex align-items-center">
+                <a href="javascript:void(0)">
+                    <img th:src="@{/image/services/policy1-0x0.png}" alt="Miễn phí vận chuyển" class="fa" />
+                </a>
+                <div class="info">
+                    <a href="javascript:void(0)"> Miễn phí vận chuyển</a>
+                    <p>
+                        <p>B&aacute;n k&iacute;nh 5 km</p>
+                    </p>
+                </div>
+            </div>
+            <div class="item-policy d-flex align-items-center">
+                <a href="javascript:void(0)">
+                    <img th:src="@{/image/services/policy2-0x0.png}" alt="Hỗ trợ 24/7" class="fa" />
+                </a>
+                <div class="info">
+                    <a href="javascript:void(0)">Hỗ trợ 24/7</a>
+                    <p>
+                        <p>Hotline:&nbsp;<a href="callto:19001009">035 2399 340</a></p>
+                    </p>
+                </div>
+            </div>
+            <div class="item-policy d-flex align-items-center">
+                <a href="javascript:void(0)">
+                    <img th:src="@{/image/services/policy3-0x0.png}" alt="Giờ làm việc" class="fa" />
+                </a>
+                <div class="info">
+                    <a href="javascript:void(0)"> Giờ làm việc</a>
+                    <p>
+                        <p>8:00 - 22:00</p>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript">
+            $('.header .header-content .header-service').append($('#header-service-0'));
+        </script>
+
+
+
+
+
+
+        <div class="container">
+            <div class="item">
+                <a href="javascript:void(0)" class="clearfix">
+                    <img th:src="@{/image/banner/danh-sach-chi-nhanh (3).png}" />
+                </a>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-12 col-md-12 col-lg-12">
+
+
+
+                    <div class="page-title category-title">
+                        <h1 class="title-head">
+                            <a href="javascript:void(0)">ĐÔI NÉT VỀ CÔNG TY</a>
+                        </h1>
+                    </div>
+                    <div class="content-page rte"></div>
+                    <p style="margin-bottom: 10px; padding: 0px; color: #525252; font-family: Arial, Helvetica, sans-serif;">Trải qua hơn 10 năm hình thành và phát triển Công ty TNHH Thực Phẩm Sạch Thương Mại T&P (Fresh Foods) đã có những bước phát triển không ngừng trong việc cung cấp các sản phẩm thực phẩm sạch nhập khẩu đến tận tay người tiêu dùng với các nhóm sản phẩm chính:</p>
+                    <p style="margin-bottom: 10px; padding: 0px; color: #525252; font-family: Arial, Helvetica, sans-serif;">-    Thịt bò Úc, Mỹ</p>
+                    <p style="margin-bottom: 10px; padding: 0px; color: #525252; font-family: Arial, Helvetica, sans-serif;">-    Thịt cừu Úc</p>
+                    <p style="margin-bottom: 10px; padding: 0px; color: #525252; font-family: Arial, Helvetica, sans-serif;">-    Cá hồi Nauy</p>
+                    <p style="margin-bottom: 10px; padding: 0px; color: #525252; font-family: Arial, Helvetica, sans-serif;">-    Gia vị Hàn Quốc, Nhật Bản </p>
+                    <p style="margin-bottom: 10px; padding: 0px; color: #525252; font-family: Arial, Helvetica, sans-serif;">-    Trái cây nhập khẩu </p>
+                    <div class="banner-slider owl-carousel" data-nav="true" data-lg-items="3" data-md-items="3" data-sm-items="2" data-xs-items="2">
+                        <div class="item">
+                            <a href="javascript:void(0)" class="clearfix">
+                                <img th:src="@{/image/banner/ch4 (1).png}" />
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="javascript:void(0)" class="clearfix">
+                                <img th:src="@{/image/banner/ch2 (1).png}" />
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="javascript:void(0)" class="clearfix">
+                                <img th:src="@{/image/banner/ch3 (1).png}" />
+                            </a>
+                        </div>
+                    </div>
+                    <br>
+                    <p style="margin-bottom: 10px; padding: 0px; color: #525252; font-family: Arial, Helvetica, sans-serif;">Với đội ngũ nhân viên trẻ được đào tạo chuyên nghiệp, năng động dưới sự dẫn dắt của chủ đầu tư có hơn 20 năm kinh nghiệm nhập khẩu và kinh doanh trong lĩnh vực thực phẩm, chúng tôi luôn chủ động trong việc kiểm soát chất lượng đầu vào và đầu ra thực phẩm một cách toàn diện nhất nhằm đem đến tay người tiêu dùng sản phẩm chất lượng tốt nhất. </p>
+                    <p style="margin-bottom: 10px; padding: 0px; color: #525252; font-family: Arial, Helvetica, sans-serif;">Bằng mối quan hệ thương maị với các đối tác xuất khẩu uy tín trên toàn cầu, chúng tôi luôn có nguồn hàng dồi dào với nguồn gốc xuất xứ rõ ràng. Bên cạnh đó, chúng tôi đã liên kết chặt chẽ với các nhà sản xuất để thực hiện nghiêm ngặt vấn đề vệ sinh an toàn thực phẩm theo đúng quy định quốc tế và theo tiêu chuẩn ISO, HACCP của châu Âu từ khâu sản xuất đến tay người tiêu dùng.</p>
+
+                </div>
+
+
+
+
+                <div class="col-sm-12 col-md-12 col-lg-12">
+                    <div class="page-title category-title">
+                        <h1 class="title-head">
+                            <a href="javascript:void(0)">TRIẾT LÝ CỦA CHÚNG TÔI</a>
+                        </h1>
+                    </div>
+                    <div class="content-page rte"></div>
+                    <p style="margin-bottom: 10px; padding: 0px; color: #525252; font-family: Arial, Helvetica, sans-serif;">•    Sức khỏe khách hàng luôn được đặt lên hàng đầu. </p>
+                    <p style="margin-bottom: 10px; padding: 0px; color: #525252; font-family: Arial, Helvetica, sans-serif;">•    Khách hàng là giá trị cơ bản nhất của công ty để tồn tại và phát triển bền vững.</p>
+                    <p style="margin-bottom: 10px; padding: 0px; color: #525252; font-family: Arial, Helvetica, sans-serif;">•    Mang lại cho khách hàng những món ăn bỗ dưỡng nhất, đảm bảo vệ sinh an toàn thực phẩm cao nhất với giá thành tốt nhất và một dịch vụ chuyên nghiệp nhất.</p>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+   
+  <section th:replace="fragment::footer-nav"></section>
+  
+  <footer th:replace="fragment::footer"></footer>
+
+   <script type="text/javascript" th:src="@{/js/owl.carousel.min.js}"></script> 
+   <script type="text/javascript" th:src="@{/bootstrap/js/bootstrap.min.js}"></script>          
+   <script type="text/javascript" th:src="@{/js/all.js}"></script>          
+   <script type="text/javascript" th:src="@{/js/index.js}"></script>
+</body>
+</html>
